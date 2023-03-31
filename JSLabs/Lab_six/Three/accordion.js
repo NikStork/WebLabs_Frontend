@@ -5,7 +5,8 @@ function toggle() {
     if (extra.style.display === "none") {
         extra.style.display = "block";
         button.innerHTML = "Less";
-    } else {
+    }
+    else {
         extra.style.display = "none";
         button.innerHTML = "More";
     }
