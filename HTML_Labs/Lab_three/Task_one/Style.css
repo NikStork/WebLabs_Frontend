@@ -1,0 +1,14 @@
+p.box {
+    width: 200px;
+    background: rgb(65, 223, 207);
+    border: 5px solid;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: auto;
+}
+
+body {
+    margin: 99px 0;
+    justify-content: center;
+    align-items: center;
+}
