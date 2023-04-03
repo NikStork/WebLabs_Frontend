@@ -1,33 +1,78 @@
+@font-face {
+    font-family: 'Garamond';
+    src: url(Fonts/garamond_[allfont.ru].ttf);
+}
+
+@font-face {
+    font-family: 'Amstelvar Roman';
+    src: url(Fonts/21003.ttf);
+}
+
 header {
+    font-family: Arial, sans-serif;
     background-color: #ffffff;
+    width: 100%;
     color: #000000;
-    padding: 20px;
-    border-bottom: 1px solid black;
+    padding: 0;
+    font-size: 30px;
+}
+
+.header h1, .header nav {
     display: inline-block;
+    vertical-align: baseline;
+}
+
+.header {
+    border-bottom: 3px solid black;
+}
+
+h2 {
+    font-size: 39px;
+    font-family: "Amstelvar Roman", sans-serif;
+    font-weight: 465;
+}
+
+header, nav {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+nav {
+    margin-left: 120px;
 }
 
 main {
-    padding: 20px;
+    padding-top: 15px;
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 33px;
+}
+
+p {
+    margin-top: 25px;
+}
+
+body {
+    margin-top: 3rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
 
 a {
     display: inline-block;
-    margin-left: 20px;
-}
-
-nav a {
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
-    color: #333;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
+    color: forestgreen;
     text-decoration: none;
     font-size: 18px;
+    font-style: inherit;
+    font-weight: 535;
 }
 
-nav a:hover {
+a:hover {
     background-color: #999;
     color: #fff;
 }
