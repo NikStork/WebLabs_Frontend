@@ -1,12 +1,17 @@
 article {
     font-size: 18px;
     font-family: Arial, sans-serif;
+    width: 60%;
+    align-content: center;
 }
 
 body {
     background: rgb(237, 237, 237);
+    display: flex;
     color: rgb(50, 50, 50);
-    margin: 1rem 30em 0 30rem;
+    align-items: center;
+    position: center;
+    justify-content: center;
 }
 
 img.city {
