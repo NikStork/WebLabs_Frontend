@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    background: rgb(238, 238, 238);
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 333px auto;
+}
+
+.container {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 3px 9px 4px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    padding: 11px 25px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+}

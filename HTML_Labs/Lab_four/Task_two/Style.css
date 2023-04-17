@@ -1,0 +1,35 @@
+body {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: Georgia, serif;
+    line-height: 1.2;
+    font-weight: 200;
+}
+
+p {
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.8;
+}
+
+.section_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    align-content: center;
+    align-items: center;
+}
+
+.article_one, .article_two, .article_three {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+}

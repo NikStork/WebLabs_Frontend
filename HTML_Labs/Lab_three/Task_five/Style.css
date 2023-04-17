@@ -27,7 +27,7 @@ ul {
 
 .gallery li {
     flex-basis: 25%;
-    width: calc(33.33% - 20px); /* уменьшаем ширину на 20px */
+    width: calc(33.33% - 20px);
     box-sizing: border-box;
     padding: 0;
     margin-left: 20px;

@@ -1,0 +1,40 @@
+body {
+    margin-top: 3%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(237, 237, 237);
+}
+
+.gallery {
+    max-width: 1200px;
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li {
+    background: white;
+    width: calc(33.33% - 20px);
+    margin-bottom: 3rem;
+    border: 7px solid black;
+    padding: 25px 10px;
+    box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.5);
+    flex-basis: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
