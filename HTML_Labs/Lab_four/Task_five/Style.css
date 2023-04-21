@@ -4,24 +4,33 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     text-align: left;
+    min-height: 100vh;
+}
+
+.cards-layout_flex {
+    flex-grow: 2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .cards-layout_flex, .cards-layout_masonry {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    width: 69%;
+    width: 63%;
     text-align: left;
+    overflow: auto;
 }
 
 .card {
-    width: calc(33.33% - 20px);
+    width: 25%;
     display: flex;
-    flex-basis: 23%;
     flex-direction: column;
     margin: 10px;
     background-color: #fff;
@@ -33,6 +42,7 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
+    width: 100%;
 }
 
 .card .image_card img {
