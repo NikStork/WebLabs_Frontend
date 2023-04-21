@@ -4,24 +4,26 @@ table {
     font-family: Helvetica, sans-serif;
     border-collapse: collapse;
     margin: auto;
-    overflow-x: auto;
 }
 
 .table thead th {
     font-weight: bold;
     text-align: left;
+    border: none;
     padding: 10px 15px;
-    background: dimgray;
+    background: #a9a9a9;
     font-size: 16px;
-    color: white;
-    border: 1px solid white;
 }
 
-.table tbody td {
-    text-align: left;
+body {
+    margin: 111px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+td {
     padding: 10px 15px;
     font-size: 15px;
-    vertical-align: top;
     border: 1px solid rgb(222, 222, 222);
 }
 
@@ -34,28 +36,59 @@ tr:hover td {
     color: rgb(255, 255, 255);
 }
 
-body {
-    margin: 111px 0;
-    justify-content: center;
-    align-items: center;
-}
 
-.table td:first-child {
-    min-width: 100px;
-}
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
 
-.table td:nth-child(2) {
-    min-width: 120px;
-}
-
-.table td:last-child {
-    min-width: 150px;
-}
-
-@media (max-width: 767px) {
-    table {
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
         display: block;
-        overflow-x: auto;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        font-weight: bold;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
         white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before {
+        content: "First Name";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Last Name";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Job Title";
     }
 }
